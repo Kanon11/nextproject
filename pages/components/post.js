@@ -3,11 +3,11 @@ import Layout from './layout';
 import { withRouter } from 'next/router'
 const Post = withRouter((props) => {
     return <div>
-        <Layout>
+        {/* <Layout>
 
-        </Layout>
+        </Layout> */}
         <h1>{props.router.query.title}</h1>
-        <h2>this is dynamic route</h2>
+        <h2>this is url masking with dynamic route</h2>
     </div>
 
 
