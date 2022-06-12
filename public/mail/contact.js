@@ -1,3 +1,5 @@
+// import $ from "jquery";
+
 $(function () {
 
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({

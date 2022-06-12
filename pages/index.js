@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Script from "next/script";
+import shop from "./shop";
+import Link from 'next/link';
 const index = () => {
     return (
         <>
@@ -105,6 +107,7 @@ const index = () => {
                 </div>
             </div>
             {/* Topbar End */}
+            
             {/* Navbar Start */}
             <div className="container-fluid mb-5">
                 <div className="row border-top px-xl-5">
@@ -198,9 +201,15 @@ const index = () => {
                                     <a href="index.html" className="nav-item nav-link active">
                                         Home
                                     </a>
-                                    <a href="shop.html" className="nav-item nav-link">
+                                    {/* <a href="shop.html" className="nav-item nav-link">
                                         Shop
-                                    </a>
+                                    </a> */}
+                                    <Link href='/shop'>
+                                        <a  className="nav-item nav-link">
+                                            Shop
+                                        </a>
+                                    </Link>
+                                    
                                     <a href="detail.html" className="nav-item nav-link">
                                         Shop Detail
                                     </a>
@@ -1101,18 +1110,18 @@ const index = () => {
             </a>
 
             {/* <!-- JavaScript Libraries --> */}
-            <Script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></Script>
-            <Script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></Script>
-            <Script type="text/javascript"  src="lib/easing/easing.min.js"></Script>
-            <Script type="text/javascript" src="lib/owlcarousel/owl.carousel.min.js"></Script>
+            {/* <Script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></Script> */}
+            {/* <Script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></Script> */}
+            {/* <Script type="text/javascript"  src="lib/easing/easing.min.js"></Script> */}
+            {/* <Script type="text/javascript" src="lib/owlcarousel/owl.carousel.min.js"></Script> */}
 
             {/* <!-- Contact Javascript File --> */}
-            <Script type="text/javascript" src="mail/jqBootstrapValidation.min.js"></Script>
-            <Script type="text/javascript" src="mail/contact.js"></Script>
+            {/* <Script type="text/javascript" src="mail/jqBootstrapValidation.min.js"></Script> */}
+            {/* <Script type="text/javascript" src="mail/contact.js"></Script> */}
 
             {/* <!-- Template Javascript --> */}
-            <Script type="text/javascript" src="js/main.js"></Script>
-            
+            {/* <Script type="text/javascript" src="js/main.js"></Script> */}
+
         </>
     )
 
