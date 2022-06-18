@@ -1,11 +1,14 @@
 import Head from "next/head";
 import CommonHead from "./components/commonHead";
+import LoginRegisterbar from "./components/loginRegisterbar";
+import Navbar from "./components/navbar";
 import Topbar from "./components/topbar";
 const shop = () => {
     return (
         <>
             <CommonHead></CommonHead>
             <Topbar></Topbar>
+            {/* <Navbar></Navbar> */}
             {/* Navbar Start */}
             <div className="container-fluid">
                 <div className="row border-top px-xl-5">
@@ -92,50 +95,7 @@ const shop = () => {
                             >
                                 <span className="navbar-toggler-icon" />
                             </button>
-                            <div
-                                className="collapse navbar-collapse justify-content-between"
-                                id="navbarCollapse"
-                            >
-                                <div className="navbar-nav mr-auto py-0">
-                                    <a href="index.html" className="nav-item nav-link">
-                                        Home
-                                    </a>
-                                    <a href="shop.html" className="nav-item nav-link active">
-                                        Shop
-                                    </a>
-                                    <a href="detail.html" className="nav-item nav-link">
-                                        Shop Detail
-                                    </a>
-                                    <div className="nav-item dropdown">
-                                        <a
-                                            href="#"
-                                            className="nav-link dropdown-toggle"
-                                            data-toggle="dropdown"
-                                        >
-                                            Pages
-                                        </a>
-                                        <div className="dropdown-menu rounded-0 m-0">
-                                            <a href="cart.html" className="dropdown-item">
-                                                Shopping Cart
-                                            </a>
-                                            <a href="checkout.html" className="dropdown-item">
-                                                Checkout
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <a href="contact.html" className="nav-item nav-link">
-                                        Contact
-                                    </a>
-                                </div>
-                                <div className="navbar-nav ml-auto py-0">
-                                    <a href="" className="nav-item nav-link">
-                                        Login
-                                    </a>
-                                    <a href="" className="nav-item nav-link">
-                                        Register
-                                    </a>
-                                </div>
-                            </div>
+                            <LoginRegisterbar></LoginRegisterbar>
                         </nav>
                     </div>
                 </div>

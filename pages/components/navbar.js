@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LoginRegisterbar from './loginRegisterbar';
 const Navbar = () => {
     return (
         <>
@@ -87,56 +88,7 @@ const Navbar = () => {
                             >
                                 <span className="navbar-toggler-icon" />
                             </button>
-                            <div
-                                className="collapse navbar-collapse justify-content-between"
-                                id="navbarCollapse"
-                            >
-                                <div className="navbar-nav mr-auto py-0">
-                                    <a href="index.html" className="nav-item nav-link active">
-                                        Home
-                                    </a>
-                                    {/* <a href="shop.html" className="nav-item nav-link">
-                                        Shop
-                                    </a> */}
-                                    <Link href='/shop'>
-                                        <a className="nav-item nav-link">
-                                            Shop
-                                        </a>
-                                    </Link>
-
-                                    <a href="detail.html" className="nav-item nav-link">
-                                        Shop Detail
-                                    </a>
-                                    <div className="nav-item dropdown">
-                                        <a
-                                            href="#"
-                                            className="nav-link dropdown-toggle"
-                                            data-toggle="dropdown"
-                                        >
-                                            Pages
-                                        </a>
-                                        <div className="dropdown-menu rounded-0 m-0">
-                                            <a href="cart.html" className="dropdown-item">
-                                                Shopping Cart
-                                            </a>
-                                            <a href="checkout.html" className="dropdown-item">
-                                                Checkout
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <a href="contact.html" className="nav-item nav-link">
-                                        Contact
-                                    </a>
-                                </div>
-                                <div className="navbar-nav ml-auto py-0">
-                                    <a href="" className="nav-item nav-link">
-                                        Login
-                                    </a>
-                                    <a href="" className="nav-item nav-link">
-                                        Register
-                                    </a>
-                                </div>
-                            </div>
+                            <LoginRegisterbar></LoginRegisterbar>
                         </nav>
                         <div
                             id="header-carousel"
