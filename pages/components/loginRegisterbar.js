@@ -1,4 +1,8 @@
+import PageddComponent from "./pageddComponent";
+
 const LoginRegisterbar = () => {
+
+
     return (
         <>
             <div
@@ -16,7 +20,8 @@ const LoginRegisterbar = () => {
                         Shop Detail
                     </a>
                     <div className="nav-item dropdown">
-                        <a
+                        <PageddComponent></PageddComponent>
+                        {/* <a
                             href="#"
                             className="nav-link dropdown-toggle"
                             data-toggle="dropdown"
@@ -30,7 +35,7 @@ const LoginRegisterbar = () => {
                             <a href="checkout.html" className="dropdown-item">
                                 Checkout
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                     <a href="/contact" className="nav-item nav-link">
                         Contact
