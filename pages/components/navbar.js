@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import DressddComponent from './dressddComponent';
 import LoginRegisterbar from './loginRegisterbar';
 const Navbar = () => {
     return (
@@ -16,15 +17,10 @@ const Navbar = () => {
                             <h6 className="m-0">Categories</h6>
                             <i className="fa fa-angle-down text-dark" />
                         </a>
-                        <nav
-                            className="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0"
-                            id="navbar-vertical"
-                        >
-                            <div
-                                className="navbar-nav w-100 overflow-hidden"
-                                style={{ height: 410 }}
-                            >
-                                <div className="nav-item dropdown">
+                        <nav className="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                            <div className="navbar-nav w-100 overflow-hidden" style={{ height: 410 }} >
+                                <DressddComponent></DressddComponent>
+                                {/* <div className="nav-item dropdown">
                                     <a href="#" className="nav-link" data-toggle="dropdown">
                                         Dresses <i className="fa fa-angle-down float-right mt-1" />
                                     </a>
@@ -39,7 +35,7 @@ const Navbar = () => {
                                             Baby's Dresses
                                         </a>
                                     </div>
-                                </div>
+                                </div> */}
                                 <a href="" className="nav-item nav-link">
                                     Shirts
                                 </a>
@@ -153,6 +149,6 @@ const Navbar = () => {
             </div>
             {/* Navbar End */}
         </>
-)
+    )
 }
 export default Navbar;
