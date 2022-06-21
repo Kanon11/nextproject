@@ -7,7 +7,6 @@ const LoginRegisterbar = () => {
         <>
             <div
                 className="collapse navbar-collapse justify-content-between"
-                id="navbarCollapse"
             >
                 <div className="navbar-nav mr-auto py-0">
                     <a href="/" className="nav-item nav-link">
@@ -21,21 +20,6 @@ const LoginRegisterbar = () => {
                     </a>
                     <div className="nav-item dropdown">
                         <PageddComponent></PageddComponent>
-                        {/* <a
-                            href="#"
-                            className="nav-link dropdown-toggle"
-                            data-toggle="dropdown"
-                        >
-                            Pages
-                        </a>
-                        <div className="dropdown-menu rounded-0 m-0">
-                            <a href="cart.html" className="dropdown-item">
-                                Shopping Cart
-                            </a>
-                            <a href="checkout.html" className="dropdown-item">
-                                Checkout
-                            </a>
-                        </div> */}
                     </div>
                     <a href="/contact" className="nav-item nav-link">
                         Contact

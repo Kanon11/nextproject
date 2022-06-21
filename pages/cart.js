@@ -1,6 +1,7 @@
 import CommonHead from "./components/commonHead"
 import Footer from "./components/footer";
 import LoginRegisterbar from "./components/loginRegisterbar";
+import MainddComponent from "./components/mainddComponent";
 import Topbar from "./components/topbar"
 
 const Cart = () => {
@@ -13,7 +14,8 @@ const Cart = () => {
                 <div className="container-fluid">
                     <div className="row border-top px-xl-5">
                         <div className="col-lg-3 d-none d-lg-block">
-                            <a
+                            <MainddComponent></MainddComponent>
+                            {/* <a
                                 className="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100"
                                 data-toggle="collapse"
                                 href="#navbar-vertical"
@@ -75,7 +77,7 @@ const Cart = () => {
                                         Shoes
                                     </a>
                                 </div>
-                            </nav>
+                            </nav> */}
                         </div>
                         <div className="col-lg-9">
                             <nav className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">

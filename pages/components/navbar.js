@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="container-fluid mb-5">
                 <div className="row border-top px-xl-5">
                     <div className="col-lg-3 d-none d-lg-block">
-                        <MainddComponent></MainddComponent>
+                        <MainddComponent from="home"></MainddComponent>
                     </div>
                     <div className="col-lg-9">
                         <nav className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
